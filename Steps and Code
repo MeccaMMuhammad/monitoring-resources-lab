@@ -1,0 +1,77 @@
+## 🧪 Exercise 1 - Monitoring Device Resource Utilization
+
+### 🔹 Task 1: Alma Linux Monitoring
+
+
+# Launch terminal
+top                 # Displays active processes and CPU usage (press 'q' to quit)
+
+top -n 10           # Refreshes display 10 times before exiting
+
+# Press Shift+M    # Sorts by memory usage
+# Press Shift+N    # Sorts by PID
+
+# Find the top process PID (example: 3060)
+k                  # Press 'k' and enter the PID to kill the process
+
+top -u aciadmin     # Shows processes for user 'aciadmin'
+
+# Press m twice     # Displays memory usage as a bar graph
+# Press q           # Quit
+
+🔹 Task 2: Kali Linux Monitoring
+
+# Update package list
+sudo apt-get update
+
+# Enter password: Passw0rd
+
+# Install htop
+sudo apt install htop -y
+
+clear              # Optional: clear terminal
+
+htop               # Start htop interactive monitoring
+
+# In htop interface:
+# - Press F9 to kill a service
+# - Press F10 to quit
+# - Use mouse to sort by CPU%
+# - Run filtered view:
+
+htop -u aciadmin   # Filter by user
+
+🔹 Task 3: Windows Server Monitoring
+
+Connect to ACIDM01
+
+Click Send Ctrl+Alt+Delete
+
+Sign in:
+
+Username: ACIPLAB\Administrator
+
+Password: Passw0rd
+
+Right-click Taskbar → Open Task Manager
+
+Click More details
+
+In Processes tab:
+
+Right-click Server Manager → Select End task
+
+Go to Performance tab → Click Open Resource Monitor
+
+In Resource Monitor, review:
+
+CPU tab → View and expand Services
+
+Memory tab → Memory usage by process
+
+Disk tab → Expand Storage
+
+Network tab → Expand Network Activity and Listening Ports
+
+Close Resource Monitor and Task Manager
+
